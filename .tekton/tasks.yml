@@ -4,9 +4,9 @@ kind: Task
 metadata:
   name: cleanup
 spec:
+  description: This task will clean up a workspace by deleting all the files.
   workspaces:
     - name: source
-      description: The workspace to clean up
   steps:
     - name: remove
       image: alpine:3
